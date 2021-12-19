@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('code pull') {
             steps {
-                git branch: 'feature', url: 'https://github.com/shaikismailzabiulla/drepo.git'
+                git branch: 'main', url: 'https://github.com/shaikismailzabiulla/mvn-based-project.git'
             }
         }
         stage('code build') {
