@@ -12,12 +12,12 @@ pipeline {
                 sh 'mvn install'
             }
         }
-        stage('copying .class file') {
+        stage('code copying') {
             steps {
                 sh 'cp /home/git-repos/mvn-based-project/target/mvn-project.war /home/softwares/apache-tomcat-9.0.54/webapps'
             }
         }
-        stage('code deploy') {
+        stage('tomcat started') {
             steps {
                 sh '/home/softwares/apache-tomcat-9.0.54/bin/startup.sh'
             }
