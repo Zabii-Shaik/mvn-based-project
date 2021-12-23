@@ -14,12 +14,12 @@ pipeline {
         }
         stage('code copying') {
             steps {
-                sh 'cp /home/git-repos/mvn-based-project/target/mvn-project.war /home/softwares/apache-tomcat-9.0.54/webapps'
+                sh 'cp /home/coderr/mvn-based-project/target/mvn-project.war /home/coderr/shell-script/apache-tomcat-9.0.54/webapps'
             }
         }
         stage('tomcat started') {
             steps {
-                sh '/home/softwares/apache-tomcat-9.0.54/bin/startup.sh'
+                sh '/home/coderr/shell-script/apache-tomcat-9.0.54/bin/startup.sh'
             }
         }
 
