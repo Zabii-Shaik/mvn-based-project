@@ -58,6 +58,8 @@
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6494516.jpg&f=1&nofb=1"
                 alt="account logo"
+		width="300px"
+		height="300px"
               />
             </div>
           </div>
