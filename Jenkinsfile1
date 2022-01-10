@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Code PULL') {
+            steps {
+                git branch:'main' ,url:'https://github.com/shaikismailzabiulla/mvn-based-project.git'
+            }
+        }
+        stage('Code BUILD') {
+            steps {
+                sh 'mvn install'
+            }
+        }
+        stage('RUN') {
+            steps {
+                sh '/container_make.sh 4 .'
+            }
+        }
+    }
+}
